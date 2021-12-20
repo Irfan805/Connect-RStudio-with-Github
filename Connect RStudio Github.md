@@ -16,3 +16,5 @@ You need to take a authentication token to get access to Github from you local R
 
 ![Authentication process](C1.png)
 ![](C2.png)
+
+**Note: Don't forget to copy & save the access token to a notepad.** Because once you refresh your browser, you won't get the code again.
