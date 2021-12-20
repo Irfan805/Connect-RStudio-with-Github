@@ -51,6 +51,7 @@ Save the *.Renviron* script and close it.
 **RStudio** > **Session** > **Restart R**
 
 Now using the library *usethis* you can connect your project with github just running this code in your console or script
+
 `
 use_github(protocol = 'https', auth_token = Sys.getenv("github_path"))
 `
