@@ -21,7 +21,7 @@ You need to take a authentication token to get access to Github from you local R
 
 ## Step two: Setup RStudio
 #### Check RStudio
-Once you have the access token, now it's time to setup your RStudio. Before you start for the setup, you need to check that you RStudion is enable for version contron interface for projects or not. Follow the corresponding steps to check this.
+Once you have the access token, now it's time to setup your RStudio. Before you start for the setup, you need to check that you RStudio is enable for version contron interface for projects or not. Follow the corresponding steps to check this.
 
 **RStudio** > **Tools** > **Global Options** > **Git/SVN** > **Tick** Enable version control interface for RStudio projects > **Apply**
 ![](P3.png)
@@ -33,7 +33,7 @@ You need to create a project that you want to work with and store it to Github. 
 ![](P4.png)
 
 #### Edit environment and start your project
-In the previous step we've created the project. Now, it's time to start the project with our project task. Let's create a R script, say **Test.R** and install the library **usehis**. So, we need to run the below codes in the console or in your script
+In the previous step we've created the project. Now, it's time to start the project with our project task. Let's create a R script, say **Test.R** and install the library **usethis**. So, we need to run the below codes in the console or in your script
 
 `install.packages("usethis")`
 
@@ -41,13 +41,14 @@ In the previous step we've created the project. Now, it's time to start the proj
 
 `edit_r_environ()`
 
-Once use run this code you'll notice that, there is new script opened autimatically named *.Renviron*. You need to paste you access token(get in step 1) here with a object name, 
+Once use run this code you'll notice that, there is new script opened autimatically named *".Renviron"*. You need to paste you access token(get in step 1) here with a object name, 
 say **github_path = "au%%%%%%%%%%%%%%%%%%%"**.
 
-Save the *.Renviron* script and close it.
+Save the *".Renviron"* script and close it.
 ![](P5.png)
 
 **Note:** You need to restart you R session to implement the effect of your access token. You can do oit with the following steps-
+
 **RStudio** > **Session** > **Restart R**
 
 Now using the library *"usethis"* you can connect your project with github just running this code in your console
@@ -55,6 +56,7 @@ Now using the library *"usethis"* you can connect your project with github just 
 `
 use_github(protocol = 'https', auth_token = Sys.getenv("github_path"))
 `
+
 ![](Done.png)
 
 In you R console you will notice that R is asking for your confirmation, you will enter the number with *Yes/Yeah*, (Probably it's 1). After your confirmation it'll take you to the Github repository in your browser.
