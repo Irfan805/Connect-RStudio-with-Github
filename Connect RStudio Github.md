@@ -20,7 +20,14 @@ You need to take a authentication token to get access to Github from you local R
 **Note: Don't forget to copy & save the access token to a notepad.** Because once you refresh your browser, you won't get the code again.
 
 ## Step two: Setup RStudio
+#### Check RStudio
 Once you have the access token, now it's time to setup your RStudio. Before you start for the setup, you need to check that you RStudion is enable for version contron interface for projects or not. Follow the corresponding steps to check this.
 
 **RStudio** > **Tools** > **Global Options** > **Git/SVN** > **Tick** Enable version control interface for RStudio projects > **Apply**
 ![](C3.png)
+
+#### Create a project
+You need to create a project that you want to work with and store it to Github. In this step, you need to go with this following steps-
+
+**RStudio** > **File** > **New Project** > **New Directory** > **New Project** > Put a **Directory name** & **tick on** Create a git repository > **Create Project**
+![](C4.png)
