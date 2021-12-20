@@ -57,7 +57,7 @@ Now using the library *"usethis"* you can connect your project with github just 
 use_github(protocol = 'https', auth_token = Sys.getenv("github_path"))
 `
 
-![](Done.png)
+![](Done.PNG)
 
 In you R console you will notice that R is asking for your confirmation, you will enter the number with *Yes/Yeah*, (Probably it's 1). After your confirmation it'll take you to the Github repository in your browser.
 
