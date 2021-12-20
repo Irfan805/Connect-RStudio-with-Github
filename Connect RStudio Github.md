@@ -35,10 +35,10 @@ You need to create a project that you want to work with and store it to Github. 
 #### Edit environment and start your project
 In the previous step we've created the project. Now, it's time to start the project with our project task. Let's create a R script, say **Test.R** and install the library **usehis**. So, we need to run the below codes in the console or in your script
 
-``
+`
 install.packages("usethis")
 
 library(usethis)
 
 edit_r_environ()
-``
+`
