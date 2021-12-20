@@ -14,4 +14,4 @@ You need to take a authintication token to get access to Github from you local R
 
 **[Github](https://github.com/) account** > **Settings** > **Developer settings** > **Personal access tokens** > **Generate new token** > **Add note, select expiration, tick repo section** > **Generate token**
 
-![Screenshot1](C:\Users\User\Dropbox\Project\Connect R Studio with Github\C1.png)
+![Screenshot](https://www.dropbox.com/s/s9nn85o0m12skqh/C1.png)
