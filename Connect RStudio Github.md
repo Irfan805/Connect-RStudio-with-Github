@@ -15,4 +15,4 @@ You need to take a authentication token to get access to Github from you local R
 **[Github](https://github.com/) account** > **Settings** > **Developer settings** > **Personal access tokens** > **Generate new token** > **Add note, select expiration, tick repo section** > **Generate token**
 
 ![Authentication process](C1.png)
-![](C1.png)
+![](C2.png)
