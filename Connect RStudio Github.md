@@ -50,7 +50,7 @@ Save the *.Renviron* script and close it.
 **Note:** You need to restart you R session to implement the effect of your access token. You can do oit with the following steps-
 **RStudio** > **Session** > **Restart R**
 
-Now using the library *usethis* you can connect your project with github just running this code in your console or script
+Now using the library *"usethis"* you can connect your project with github just running this code in your console or script
 
 `
 use_github(protocol = 'https', auth_token = Sys.getenv("github_path"))
