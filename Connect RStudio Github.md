@@ -46,3 +46,15 @@ say **github_path = "au%%%%%%%%%%%%%%%%%%%"**.
 
 Save the *.Renviron* script and close it.
 ![](C5.png)
+
+**Note:** You need to restart you R session to implement the effect of your access token. You can do oit with the following steps-
+**RStudio** > **Session** > **Restart R**
+
+Now using the library *usethis* you can connect your project with github just running this code in your console or script
+`
+use_github(protocol = 'https', auth_token = Sys.getenv("github_path"))
+`
+
+In you R console you will notice that R is asking for your confirmation, you will enter the number with *Yes/Yeah*, (Probably it's 1).
+
+**Congrats**, with this step your RStudio is connected with you Github account.
