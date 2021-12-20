@@ -9,9 +9,9 @@ You need to have three items available to get this service
 
 Once you are done with all of those three items, you can proceed to your local work to global/remote.
 
-##Step One: Authentication
+## Step One: Authentication
 You need to take a authintication token to get access to Github from you local RStudio. You need to sign in your Github account and follow the corresponding steps-
 
 **[Github](https://github.com/) account** > **Settings** > **Developer settings** > **Personal access tokens** > **Generate new token** > **Add note, select expiration, tick repo section** > **Generate token**
 
-![Screenshot1]("https://www.dropbox.com/home/Project/Connect%20R%20Studio%20with%20Github?preview=P1.png")
+![Screenshot1](https://www.dropbox.com/home/Project/Connect%20R%20Studio%20with%20Github?preview=P1.png/200/200)
