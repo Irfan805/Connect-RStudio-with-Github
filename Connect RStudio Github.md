@@ -50,12 +50,26 @@ Save the *.Renviron* script and close it.
 **Note:** You need to restart you R session to implement the effect of your access token. You can do oit with the following steps-
 **RStudio** > **Session** > **Restart R**
 
-Now using the library *"usethis"* you can connect your project with github just running this code in your console or script
+Now using the library *"usethis"* you can connect your project with github just running this code in your console
 
 `
 use_github(protocol = 'https', auth_token = Sys.getenv("github_path"))
 `
+![](Confirm.png)
 
-In you R console you will notice that R is asking for your confirmation, you will enter the number with *Yes/Yeah*, (Probably it's 1).
+In you R console you will notice that R is asking for your confirmation, you will enter the number with *Yes/Yeah*, (Probably it's 1). After your confirmation it'll take you to the Github repository in your browser.
+
 
 **Congrats**, with this step your RStudio is connected with you Github account.
+
+## Step three: Push project to Github
+Now, you may want to push your project/task of RStudio in Github. For this, you need to save the script of your project, in our case it's *Test.R*. Then We'll find a ***Git*** tab on top right. You need to select the file(*Test.R*) you want to push. Then follow these steps
+
+**Select the R script** > **Commit**
+
+You will get a new wingdow when you click commit, there you can put some text for you own and then click **commit** again. You'll get a message window and close it.
+
+Once you click commit then your R script has updated to stage and to push it to Github you need to click **push**, You'll get another message window and close it.
+
+![](C6.png)
+![](C7.png)
