@@ -14,8 +14,8 @@ You need to take a authentication token to get access to Github from you local R
 
 **[Github](https://github.com/) account** > **Settings** > **Developer settings** > **Personal access tokens** > **Generate new token** > **Add note, select expiration, tick repo section** > **Generate token**
 
-![Authentication process](C1.png)
-![](C2.png)
+![](P.png)
+![](P2.png)
 
 **Note: Don't forget to copy & save the access token to a notepad.** Because once you refresh your browser, you won't get the code again.
 
@@ -24,13 +24,13 @@ You need to take a authentication token to get access to Github from you local R
 Once you have the access token, now it's time to setup your RStudio. Before you start for the setup, you need to check that you RStudion is enable for version contron interface for projects or not. Follow the corresponding steps to check this.
 
 **RStudio** > **Tools** > **Global Options** > **Git/SVN** > **Tick** Enable version control interface for RStudio projects > **Apply**
-![](C3.png)
+![](P3.png)
 
 #### Create a project
 You need to create a project that you want to work with and store it to Github. In this step, you need to go with this following steps-
 
 **RStudio** > **File** > **New Project** > **New Directory** > **New Project** > Put a **Directory name** & **tick on** Create a git repository > **Create Project**
-![](C4.png)
+![](P4.png)
 
 #### Edit environment and start your project
 In the previous step we've created the project. Now, it's time to start the project with our project task. Let's create a R script, say **Test.R** and install the library **usehis**. So, we need to run the below codes in the console or in your script
@@ -45,7 +45,7 @@ Once use run this code you'll notice that, there is new script opened autimatica
 say **github_path = "au%%%%%%%%%%%%%%%%%%%"**.
 
 Save the *.Renviron* script and close it.
-![](C5.png)
+![](P5.png)
 
 **Note:** You need to restart you R session to implement the effect of your access token. You can do oit with the following steps-
 **RStudio** > **Session** > **Restart R**
@@ -55,7 +55,7 @@ Now using the library *"usethis"* you can connect your project with github just 
 `
 use_github(protocol = 'https', auth_token = Sys.getenv("github_path"))
 `
-![](Confirm.png)
+![](Done.png)
 
 In you R console you will notice that R is asking for your confirmation, you will enter the number with *Yes/Yeah*, (Probably it's 1). After your confirmation it'll take you to the Github repository in your browser.
 
@@ -71,5 +71,11 @@ You will get a new wingdow when you click commit, there you can put some text fo
 
 Once you click commit then your R script has updated to stage and to push it to Github you need to click **push**, You'll get another message window and close it.
 
-![](C6.png)
-![](C7.png)
+![](P6.png)
+![](P7.png)
+
+After pushing it, you closee the message and commit window. Now, if you go to the browser in you github account you can see that your local file will appear in your github account.
+
+![](Git.png)
+
+***Congratulations!!!***, **Your local RStudio project is finally on Github**
