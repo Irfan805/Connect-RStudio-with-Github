@@ -40,3 +40,9 @@ In the previous step we've created the project. Now, it's time to start the proj
 `library(usethis)`
 
 `edit_r_environ()`
+
+Once use run this code you'll notice that, there is new script opened autimatically named *.Renviron*. You need to paste you access token(get in step 1) here with a object name, 
+say **github_path = "au%%%%%%%%%%%%%%%%%%%"**.
+
+Save the *.Renviron* script and close it.
+![](C5.png)
